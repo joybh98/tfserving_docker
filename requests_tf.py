@@ -6,7 +6,7 @@ import json
 SERVER_URL='http://localhost:8501/v1/models/nlp_model:regress'
 headers={"content-type":"application/json"}
 
-test_data = np.ndarray(shape=(100,)).tolist()
+test_data = np.ndarray(shape=(100,),dtype=int).tolist()
 
 body = {
     "instances": test_data
