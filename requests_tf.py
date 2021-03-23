@@ -9,9 +9,8 @@ headers={"content-type":"application/json"}
 test_data = np.ndarray(shape=(100,),dtype=int).tolist()
 
 body = {
-    "instances":[
-        {"txt_example":test_data}
-    ]
+    "signature_name": "serving_default",
+    "instances":{"b64":test_data}
 }
 
 # r will show the http response ex:<Response [400]>, <Response [200]> etc
